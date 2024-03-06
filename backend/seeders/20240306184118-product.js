@@ -26,7 +26,7 @@ module.exports = {
         brand: 'Xiaomi',
         model: 'Redmi 9s',
         price: 1279,
-        color: 'blue sky',
+        color: 'sky blue',
       },
       {
         name: 'Samsung Galaxy Note 10 Plus',
