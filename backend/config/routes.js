@@ -4,6 +4,9 @@ const ROUTE = {
 
 const PRODUCT_ROUTE = {
   TEST: '/test',
+  FIND: {
+    ALL: '/find/all'
+  },
 };
 
 module.exports = {
