@@ -15,5 +15,6 @@ productRouter.post(
   controller.create,
 );
 productRouter.put(PRODUCT_ROUTE.EDIT, validateProductData, controller.edit);
+productRouter.get(PRODUCT_ROUTE.FIND.ID, controller.findOneById);
 
 module.exports = productRouter;

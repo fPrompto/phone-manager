@@ -5,7 +5,8 @@ const ROUTE = {
 const PRODUCT_ROUTE = {
   TEST: '/test',
   FIND: {
-    ALL: '/find/all'
+    ALL: '/find/all',
+    ID: '/find/id/:id',
   },
   CREATE: '/create',
   EDIT: '/edit',
