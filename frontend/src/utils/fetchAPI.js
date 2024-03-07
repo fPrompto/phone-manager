@@ -1,8 +1,7 @@
 import axios from 'axios';
-import * as dotenv from 'dotenv';
-dotenv.config();
 
-const BACKEND_URI = process.env.BACKEND_URI
+const BACKEND_URI = process.env.REACT_APP_BACKEND_URI
+
 
 export async function getAPI(route) {
   const URL = `${BACKEND_URI}${route}`;
