@@ -29,7 +29,7 @@ const create = async ({ name, brand, model, price, color }) => {
     return {
       status: STATUS_CODE.BAD_REQUEST,
       message: PRODUCT_MESSAGE.CREATE.FAIL,
-      data: '',
+      data: e,
     };
   }
 };
