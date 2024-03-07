@@ -13,10 +13,6 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      // brand: DataTypes.STRING,
-      // model: DataTypes.STRING,
-      // price: DataTypes.INTEGER,
-      // color: DataTypes.STRING,
       brand: {
         type: Sequelize.STRING,
         allowNull: false,

@@ -7,6 +7,7 @@ const PRODUCT_ROUTE = {
   FIND: {
     ALL: '/find/all'
   },
+  CREATE: '/create',
 };
 
 module.exports = {
