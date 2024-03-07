@@ -22,8 +22,8 @@ const create = async ({ name, brand, model, price, color }) => {
 
     return {
       status: STATUS_CODE.CREATED,
-      message: PRODUCT_MESSAGE.CREATE.SUCCESS,
-      data: create,
+      message: '',
+      data: find,
     };
   } catch (e) {
     return {
@@ -33,6 +33,23 @@ const create = async ({ name, brand, model, price, color }) => {
     };
   }
 };
+
+const findOneById = async (id) => {
+  try {
+    const find = await Product.findOne({ where: { id } });
+    return {
+      status: STATUS_CODE.OK,
+      message: '',
+      data: find,
+    };
+  } catch (e) {
+    return {
+      status: STATUS_CODE.BAD_REQUEST,
+      message: '',
+      data: e,
+    };
+  }
+}
 
 const edit = async ({ id, name, brand, model, price, color }) => {
   try {
@@ -65,4 +82,5 @@ module.exports = {
   findAll,
   create,
   edit,
+  findOneById,
 };
