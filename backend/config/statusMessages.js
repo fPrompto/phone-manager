@@ -21,7 +21,17 @@ const PRODUCT_MESSAGE = {
   }
 };
 
+const PRODUCT_VALIDATION = {
+  NAME: 'O Nome precisa ser uma string',
+  BRAND: 'A Marca precisa ser uma string',
+  MODEL: 'O Modelo precisa ser uma string',
+  PRICE: 'O preço precisa ser um número',
+  COLOR: 'A cor precisa ser uma string',
+  SUCCESS: 'Validação completada!',
+}
+
 module.exports = {
   STATUS_CODE,
   PRODUCT_MESSAGE,
+  PRODUCT_VALIDATION,
 };
