@@ -64,10 +64,12 @@ const edit = async ({ id, name, brand, model, price, color }) => {
       { where: { id } },
     );
 
+    const getProduct = await findOneById(update[0]);
+
     return {
       status: STATUS_CODE.OK,
       message: PRODUCT_MESSAGE.EDIT.SUCCESS,
-      data: update,
+      data: getProduct.data,
     };
   } catch (e) {
     return {
