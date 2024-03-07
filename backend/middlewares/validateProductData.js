@@ -1,4 +1,4 @@
-import { PRODUCT_VALIDATION, STATUS_CODE } from '../config/statusMessages';
+const { PRODUCT_VALIDATION, STATUS_CODE } = require('../config/statusMessages');
 
 const checkDataType = ({ name, brand, model, price, color }) => {
   if (typeof name !== 'string') {
