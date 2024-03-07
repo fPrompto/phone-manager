@@ -17,4 +17,4 @@ const comparePassword = async (userPassword, dbHashedPassword) => {
   return false;
 };
 
-export { hashPassword, comparePassword };
+module.exports = { hashPassword, comparePassword };
