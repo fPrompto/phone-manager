@@ -23,7 +23,7 @@ const create = async ({ name, brand, model, price, color }) => {
     return {
       status: STATUS_CODE.CREATED,
       message: '',
-      data: find,
+      data: create,
     };
   } catch (e) {
     return {
