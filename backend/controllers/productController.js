@@ -21,7 +21,24 @@ const create = async (req, res) => {
     .json({ message: create.message, data: create.data });
 };
 
+const edit = async (req, res) => {
+  const { id, name, brand, model, price, color } = req.body;
+  const edit = await productService.edit({
+    id,
+    name,
+    brand,
+    model,
+    price,
+    color,
+  });
+
+  return (
+    res.status(edit.status).json({ message: edit.message, data: edit.data })
+  );
+};
+
 module.exports = {
   findAll,
   create,
+  edit,
 };

@@ -14,5 +14,6 @@ productRouter.post(
   validateProductData,
   controller.create,
 );
+productRouter.put(PRODUCT_ROUTE.EDIT, validateProductData, controller.edit);
 
 module.exports = productRouter;

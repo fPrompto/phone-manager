@@ -8,6 +8,7 @@ const PRODUCT_ROUTE = {
     ALL: '/find/all'
   },
   CREATE: '/create',
+  EDIT: '/edit',
 };
 
 module.exports = {
