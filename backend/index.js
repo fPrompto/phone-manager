@@ -20,6 +20,8 @@ app.all('/*', (_req, res, next) => {
   next();
 });
 
+app.get("/", (req, res) => res.send('Hello World!!'));
+
 app.use(ROUTE.PRODUCT, productRouter);
 app.use(ROUTE.USER, userRouter);
 
