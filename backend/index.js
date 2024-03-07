@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 require('dotenv').config();
 
 const { ROUTE } = require('./config/routes');
-const { productRouter } = require('./routes');
+const { productRouter, userRouter } = require('./routes');
 
 const PORT = process.env.PORT || 7000;
 
@@ -21,5 +21,6 @@ app.all('/*', (_req, res, next) => {
 });
 
 app.use(ROUTE.PRODUCT, productRouter);
+app.use(ROUTE.USER, userRouter);
 
 app.listen(PORT, () => console.log(`running on port ${PORT}`));

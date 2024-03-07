@@ -1,5 +1,6 @@
 const ROUTE = {
   PRODUCT: '/product',
+  USER: '/user',
 };
 
 const PRODUCT_ROUTE = {
@@ -12,7 +13,12 @@ const PRODUCT_ROUTE = {
   EDIT: '/edit',
 };
 
+const USER_ROUTE = {
+  CREATE: '/create',
+};
+
 module.exports = {
   ROUTE,
   PRODUCT_ROUTE,
+  USER_ROUTE,
 };
